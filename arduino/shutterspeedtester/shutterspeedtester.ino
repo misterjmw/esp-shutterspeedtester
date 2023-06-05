@@ -9,7 +9,7 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // shutter speed tester settings
-#define RECEIVER_PIN A6  // pin to read the light sensor output.
+#define RECEIVER_PIN A10  // pin to read the light sensor output - Changed for the Seeed Studio XIAO SAMD21
 #define TIMEOUT 8000000  // timeout value for analogPulsIn().
 #define THRESHOLD 200  // analogPlusIn() thinks HI, if the light sensor value is higher than this value.
 #define MIN_DURATION 500 // usecs. ignore the duration if it is lower than this value.
